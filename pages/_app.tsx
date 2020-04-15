@@ -4,6 +4,8 @@ import App from "next/app";
 import Head from "next/head";
 import { StaticKitProvider } from "@statickit/react";
 
+import "../styles/styles.scss";
+
 export default class MyApp extends App {
   public render() {
     const { Component, pageProps } = this.props;
