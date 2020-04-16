@@ -8,6 +8,18 @@ const Home: NextPage = () => (
         <strong>Sign up</strong>
       </a>
       <a className="button is-light">Log in</a>
+      <a className="button is-primary">
+        <span className="icon">
+          <i className="fab fa-github" />
+        </span>
+        <span>GitHub</span>
+      </a>
+      <a className="button is-primary">
+        <span className="icon">
+          <i className="fab fa-twitter"></i>
+        </span>
+        <span>Twitter</span>
+      </a>
     </div>
   </Layout>
 );
