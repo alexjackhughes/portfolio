@@ -1,4 +1,116 @@
-$primary: hsl(0, 0%, 4%);
+// Custom Bulma variables
+$button-border-width: 3px;
 
+$primary: #00061b;
+$white: #fafafa;
+$grey-darker: $primary;
+$grey-dark: #9ca8ac;
+$light: #f4f4f4;
+$footer-background-color: $primary;
+$blue: $primary;
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900|Muli&display=swap");
 // We can import bulma into the project using Sass.
 @import "../node_modules/bulma/bulma.sass";
+@import "./spacers.scss";
+
+html {
+  font-family: "Muli", sans-serif;
+  background-color: $primary;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.title {
+  font-weight: 900;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.has-right-margin-on-mobile {
+  @media only screen and (max-width: 1024px) {
+    margin-right: 2rem;
+  }
+}
+
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
+    infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#hero-title {
+  font-size: 5rem;
+  @media only screen and (max-width: 600px) {
+    font-size: 3rem;
+  }
+}
+
+#hero-tagline {
+  font-size: 1.5rem;
+}
+
+.curve {
+  display: block;
+  margin-bottom: -0.5rem;
+}
+
+.flip-horizontal {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.flip-vertical {
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.transparent {
+  opacity: 0.2;
+}
+
+.navbar {
+  background-color: $primary;
+}
+
+.navbar-burger span {
+  height: 2px;
+  color: $grey-darker;
+}
+
+.level-item:hover {
+  transition: padding 500ms;
+  padding-bottom: 3rem;
+}
+
+// .container {
+//   display: flex;
+//   flex-direction: column;
+// }

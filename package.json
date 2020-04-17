@@ -16,9 +16,11 @@
     "@statickit/react": "^2.1.1",
     "bulma": "^0.7.5",
     "next": "^9.3.5",
+    "next-images": "^1.4.0",
     "node-sass": "^4.12.0",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-rotating-text": "^1.4.1"
   },
   "devDependencies": {
     "@types/node": "^13.11.1",

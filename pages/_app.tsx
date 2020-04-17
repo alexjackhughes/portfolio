@@ -4,6 +4,8 @@ import App from "next/app";
 import Head from "next/head";
 import { StaticKitProvider } from "@statickit/react";
 
+import Layout from "../components/layout/Layout";
+
 import "../styles/styles.scss";
 import "../node_modules/@fortawesome/fontawesome-pro/css/all.css";
 
@@ -20,9 +22,10 @@ export default class MyApp extends App {
           />
           <title>Portfolios</title>
         </Head>
-
         <StaticKitProvider site="8f3036ece773">
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </StaticKitProvider>
       </>
     );
