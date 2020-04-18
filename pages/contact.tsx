@@ -1,10 +1,15 @@
 import React from "react";
 import { useForm, ValidationError } from "@statickit/react";
+
 function ContactForm() {
   const [state, handleSubmit] = useForm("contactForm");
+
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
   }
+
+  console.log("state", state);
+
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="email">Email Address</label>

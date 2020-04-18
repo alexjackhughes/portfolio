@@ -1,13 +1,16 @@
 // Custom Bulma variables
-$button-border-width: 3px;
+$button-border-width: 4px;
 
-$primary: #00061b;
 $white: #fafafa;
-$grey-darker: $primary;
-$grey-dark: #9ca8ac;
-$light: #f4f4f4;
-$footer-background-color: $primary;
-$blue: $primary;
+$primary: #eb4056;
+$dark: #00061b;
+
+$grey: #9ca8ac;
+$grey-darker: $grey;
+$grey-dark: $white; //#9ca8ac;
+
+$light: $white;
+$footer-background-color: $dark;
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:900|Muli&display=swap");
 // We can import bulma into the project using Sass.
@@ -15,8 +18,8 @@ $blue: $primary;
 @import "./spacers.scss";
 
 html {
-  font-family: "Muli", sans-serif;
-  background-color: $primary;
+  font-family: "Muli", sans-serif !important;
+  // background-color: $dark;
 }
 
 body {
@@ -31,10 +34,6 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-}
-
-.title {
   font-weight: 900;
 }
 
@@ -92,25 +91,63 @@ code {
   transform: scaleY(-1);
 }
 
-.transparent {
-  opacity: 0.2;
+.is-transparent {
+  opacity: 0.4;
 }
+// .transparent {
+//   opacity: 0.2;
+// }
 
-.navbar {
-  background-color: $primary;
-}
+// .navbar {
+//   // background-color: $primary;
+// }
 
 .navbar-burger span {
   height: 2px;
-  color: $grey-darker;
+  color: $dark;
+}
+
+.level-item {
+  opacity: 0.4;
 }
 
 .level-item:hover {
-  transition: padding 500ms;
-  padding-bottom: 3rem;
+  transition: opacity 300ms;
+  opacity: 1;
 }
 
-// .container {
-//   display: flex;
-//   flex-direction: column;
+.container {
+  padding-top: 2rem;
+}
+
+// .has-bg-image {
+//   background: url("https://images.unsplash.com/photo-1415025148099-17fe74102b28?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2040&q=80")
+//     center center;
+//   background-size: cover;
 // }
+
+.box {
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 10, 56, 0.1) 0 0 36px 0;
+  margin: 1rem;
+}
+
+.box:hover {
+  box-shadow: rgba(0, 10, 56, 0.15) 0 0 36px 0;
+}
+
+.is-between-sections {
+}
+
+@media (max-width: 800px) {
+  .is-between-sections {
+    margin-bottom: 0rem;
+  }
+}
+
+.has-no-input-styling {
+  background-color: white;
+  border: none;
+  box-shadow: none;
+}
