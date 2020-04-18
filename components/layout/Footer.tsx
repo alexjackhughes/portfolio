@@ -7,28 +7,23 @@ export default function Footer() {
     <>
       <div className="container">
         <div className="columns">
-          <div className="column is-two-thirds">
-            <div className="has-padding-small">
-              <h2 className="title is-1 has-text-dark">What next?</h2>
+          <div className="column is-three-fifths is-offset-one-fifth">
+            <div className="has-padding-small has-text-centered">
+              <h2 className="title is-1 has-text-dark">What's next?</h2>
               <p className="subtitle has-text-grey">
                 Well future friend, I'm playing around with running a monthly
                 newsletter.
               </p>
-              <p className="subtitle has-text-grey">
-                I have all this knowledge of what it's like to go from
-                freelancing to being a senior software engineer, and I just
-                wanted to give something back.
-              </p>
+
               <p className="subtitle has-text-grey">
                 Another developer newsletter, really? Yep really. And to show
                 you how super serious I am, I'll even send you a free secret
                 gift when you sign up.
               </p>
+              <Subscription />
             </div>
           </div>
-          <div className="column">
-            <Subscription />
-          </div>
+          <div className="column"></div>
         </div>
       </div>
       <img

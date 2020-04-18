@@ -26,15 +26,11 @@ export default function Navbar() {
                   HOME
                 </a>
               </Link>
-              <Link href="/blog">
-                <a className="navbar-item has-text-weight-bold has-text-dark">
-                  BLOG
-                </a>
-              </Link>
+
               <Link href="/contact">
                 <span className="navbar-item">
                   <button className="button is-primary is-rounded">
-                    <span className="has-text-weight-bold">message me</span>
+                    <span className="has-text-weight-bold">Let's talk</span>
                     <span className="icon is-medium">
                       <i className="fad fa-paper-plane" />
                     </span>
@@ -58,13 +54,6 @@ export default function Navbar() {
                 <Link href="/contact">
                   <a className="has-text-weight-bold is-size-2-mobile has-text-dark">
                     MESSAGE
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog">
-                  <a className="has-text-weight-bold is-size-2-mobile has-text-dark">
-                    BLOG
                   </a>
                 </Link>
               </li>

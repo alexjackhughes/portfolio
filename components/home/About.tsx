@@ -7,7 +7,9 @@ export default function About() {
       <div className="hero is-dark is-fullheight">
         <div className="hero-body">
           <Container>
-            <h2 className="title is-1">Who the heck am I?</h2>
+            <h2 className="title is-1 has-padding-bottom-medium">
+              Who the heck am I?
+            </h2>
             <p className="subtitle has-text-grey">
               My name is Alexander Jack Hughes. But you can call me Alex.
             </p>
@@ -27,13 +29,13 @@ export default function About() {
               a number of production-grade web apps.
             </p>
             <p className="subtitle has-text-grey">
-              Tech stack? Mainly I work with React & GraphQL, and a good solid
+              Tech stack? Mainly I work with React & GraphQL, using a good solid
               framework like Gatsby or Next.js.
             </p>
             <p className="subtitle has-text-grey">
               But enough about me, how have you been?
             </p>
-            <div className="container">
+            <div className="has-margin-top-large">
               <div className="columns">
                 <div className="column is-one-third">
                   <nav className="level is-mobile">
