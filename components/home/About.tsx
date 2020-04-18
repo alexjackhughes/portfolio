@@ -62,20 +62,20 @@ export default function About() {
 const icons = [
   {
     icon: "fa-browser",
-    heading: "websites built",
-    title: "80+",
+    heading: "web apps built",
+    title: "20+",
     color: "has-text-info",
   },
   {
     icon: "fa-chart-line",
     heading: "of freelancers",
-    title: "1%",
+    title: "TOP 1%",
     color: "has-text-success",
   },
   {
-    icon: "fa-download",
-    heading: "downloads",
-    title: "3mil",
-    color: "has-text-danger",
+    icon: "fad fa-sack-dollar",
+    heading: "in revenue created",
+    title: "1mil",
+    color: "has-text-warning",
   },
 ];

@@ -16,9 +16,9 @@ export default function Footer() {
               </p>
 
               <p className="subtitle has-text-grey">
-                Another developer newsletter, really? Yep really. And to show
-                you how super serious I am, I'll even send you a free secret
-                gift when you sign up.
+                Another startup newsletter, really? Yep really. And to show you
+                how super serious I am, I'll even send you a free secret gift
+                when you sign up.
               </p>
               <Subscription />
             </div>
