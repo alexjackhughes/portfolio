@@ -1,7 +1,11 @@
 import { useState } from "react";
 import Link from "next/link";
 
-export default function Navbar() {
+interface Props {
+  isDark?: boolean;
+}
+
+export default function Navbar<Props>({ isDark = false }) {
   const [isActive, setIsActive] = useState<boolean>(false);
 
   return (

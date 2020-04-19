@@ -3,10 +3,10 @@ import Container from "../layout/Container";
 export default function Contact({ children }) {
   return (
     <>
-      <div className="hero is-medium is-dark is-fullheight">
+      <div className="hero is-medium is-fullheight">
         <div className="hero-body">
           <Container>
-            <h1 className="title is-1 has-text-white" id="hero-title">
+            <h1 className="title is-1 has-text-dark" id="hero-title">
               Contact me
             </h1>
             <p className="subtitle has-text-grey">
