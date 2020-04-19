@@ -16,7 +16,6 @@ export default function Footer() {
                 Well future friend, I'm playing around with running a monthly
                 newsletter.
               </p>
-
               <p className="subtitle has-text-grey">
                 Another startup newsletter, really? Yep really. And to show you
                 how super serious I am, I'll even send you a free secret gift
@@ -25,7 +24,6 @@ export default function Footer() {
               <Subscription />
             </div>
           </div>
-          <div className="column"></div>
         </div>
       </div>
       <img

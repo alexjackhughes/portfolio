@@ -18,12 +18,16 @@ export default function Subscription() {
       className="box is-between-sections has-text-centered"
       onSubmit={handleSubmit}
     >
-      <label htmlFor="email">Email Address</label>
+      <label htmlFor="email">
+        <h4 className="title is-4 has-text-dark is-transparent has-margin-bottom-small">
+          Pop in your email 📬
+        </h4>
+      </label>
       <input
         id="email"
         type="email"
         name="email"
-        placeholder="Your email"
+        placeholder="johnny@cash.com"
         className="input is-medium has-no-input-styling"
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
