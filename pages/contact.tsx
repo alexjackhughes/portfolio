@@ -1,17 +1,17 @@
 import React from "react";
+import Head from "next/head";
 import { useForm, ValidationError } from "@statickit/react";
+
 import Contact from "../components/contact";
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("contactForm");
 
-  const handle = (e) => {
-    e.preventDefault();
-    console.log("woo", e.target.value);
-  };
-
   return (
     <>
+      <Head>
+        <title>Contact me | Alex Jack Hughes</title>
+      </Head>
       <Contact>
         <form onSubmit={handleSubmit}>
           <label htmlFor="email" />
@@ -50,21 +50,6 @@ function ContactForm() {
             <span className="has-text-weight-bold">Send message</span>
           </button>
         </form>
-        {/* 
-        <form onSubmit={handle}>
-          <label htmlFor="email">Email Address</label>
-          <input id="email" type="email" name="email" />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
-          <textarea id="message" name="message" />
-          <ValidationError
-            prefix="Message"
-            field="message"
-            errors={state.errors}
-          />
-          <button type="submit" disabled={state.submitting}>
-            Submit
-          </button>
-        </form> */}
       </Contact>
     </>
   );

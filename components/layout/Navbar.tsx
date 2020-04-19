@@ -33,7 +33,7 @@ export default function Navbar<Props>({ isDark = false }) {
 
               <Link href="/contact">
                 <span className="navbar-item">
-                  <button className="button is-primary is-rounded">
+                  <button className="button is-danger is-rounded">
                     <span className="has-text-weight-bold">Let's talk</span>
                     <span className="icon is-medium">
                       <i className="fad fa-paper-plane" />

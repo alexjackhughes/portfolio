@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Subscription from "./Subscription";
 
 export default function Footer() {
@@ -8,7 +10,7 @@ export default function Footer() {
       <div className="container">
         <div className="columns">
           <div className="column is-three-fifths is-offset-one-fifth">
-            <div className="has-padding-small has-text-centered">
+            <div className="has-padding-small has-text-centered is-white">
               <h2 className="title is-1 has-text-dark">What's next?</h2>
               <p className="subtitle has-text-grey">
                 Well future friend, I'm playing around with running a monthly
@@ -39,6 +41,52 @@ export default function Footer() {
           <p className="is-transparent">
             Alexander Jack Hughes © {date.getFullYear()}
           </p>
+        </div>
+        <div className="container">
+          <div className="columns">
+            <div className="column is-one-third is-offset-one-third has-text-centered">
+              <span className="icon is-large has-margin-small">
+                <a
+                  href="https://twitter.com/alexjackhughes"
+                  target="_blank"
+                  rel="noopener"
+                  className="has-text-primary"
+                >
+                  <i className="fa-2x fab fa-twitter footer-icon" />
+                </a>
+              </span>
+              <span className="icon is-large has-margin-small">
+                <a
+                  href="https://github.com/alexjackhughes"
+                  target="_blank"
+                  rel="noopener"
+                  className="has-text-primary"
+                >
+                  <i className="fa-2x fab fa-github footer-icon" />
+                </a>
+              </span>
+              <span className="icon is-large has-margin-small">
+                <a
+                  href="https://www.linkedin.com/in/alexjackhughes/"
+                  target="_blank"
+                  rel="noopener"
+                  className="has-text-primary"
+                >
+                  <i className="fa-2x fab fa-linkedin-in footer-icon" />
+                </a>
+              </span>
+              <span className="icon is-large has-margin-small">
+                <a
+                  href="https://angel.co/u/alexjackhughes"
+                  target="_blank"
+                  rel="noopener"
+                  className="has-text-primary"
+                >
+                  <i className="fa-2x fab fa-angellist footer-icon" />
+                </a>
+              </span>
+            </div>
+          </div>
         </div>
       </footer>
     </>

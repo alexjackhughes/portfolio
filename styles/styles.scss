@@ -1,7 +1,7 @@
 $button-border-width: 4px;
 
 $white: #fafafa;
-$primary: #eb4056;
+$primary: #ff3860;
 $dark: #00061b;
 
 $grey: #9ca8ac;
@@ -18,7 +18,8 @@ $footer-background-color: $dark;
 html {
   margin: 0;
   font-family: "Muli", sans-serif !important;
-  // background-color: $dark;
+
+  background-color: $dark;
 }
 
 body {
@@ -31,7 +32,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.navbar,
+.button {
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
 }
@@ -133,4 +136,14 @@ code {
   background-color: white;
   border: none;
   box-shadow: none;
+}
+
+.footer-icon {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.footer-icon:hover {
+  transition: opacity 300ms;
+  opacity: 1;
 }

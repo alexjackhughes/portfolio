@@ -3,7 +3,7 @@ import Container from "../layout/Container";
 
 export default function Hero() {
   return (
-    <div className="hero is-medium is-fullheight has-bg-image">
+    <div className="hero is-medium is-fullheight is-white">
       <div className="hero-body">
         <Container>
           <h1 className="has-text-dark" id="hero-title">
@@ -34,9 +34,9 @@ export default function Hero() {
 const myFeatures: string[] = [
   "startup founder",
   "Node back-end engineer",
-  "TypeScript aficionado",
+  "TypeScript superfan",
   "React front-end developer",
   "coding mentor",
-  "fiddler of AWS settings",
+  "dabbler in AWS settings",
   "builder of docker images",
 ];

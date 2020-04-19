@@ -25,8 +25,8 @@ export default function About() {
               >
                 a few things for Hackernoon
               </a>
-              . I'm pretty comfortable with JavaScript, having built from sratch
-              a number of production-grade web apps.
+              . I'm pretty comfortable with JavaScript, having built from
+              scratch a number of production-grade web apps.
             </p>
             <p className="subtitle has-text-grey">
               Tech stack? Mainly I work with React & GraphQL, using a good solid
