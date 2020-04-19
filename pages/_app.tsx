@@ -9,6 +9,8 @@ import Layout from "../components/layout/Layout";
 import "../styles/styles.scss";
 import "../node_modules/@fortawesome/fontawesome-pro/css/all.css";
 
+const GA_TRACKING_ID = "GTM-P8NBRBL";
+
 export default class MyApp extends App {
   public render() {
     const { Component, pageProps } = this.props;
@@ -25,7 +27,24 @@ export default class MyApp extends App {
           <meta
             name="description"
             content="Hi, I’m Alex Hughes! I'm a Full-Stack Engineer and builder of high-growth startups based in Bristol. Speciality? Typically I build serverless web apps in React, GraphQL, and TypeScript."
-          ></meta>
+          />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+            }}
+          />
         </Head>
         <StaticKitProvider site="8f3036ece773">
           <Layout>

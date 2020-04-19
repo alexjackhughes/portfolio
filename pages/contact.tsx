@@ -11,6 +11,10 @@ function ContactForm() {
     <>
       <Head>
         <title>Contact me | Alex Jack Hughes</title>
+        <meta
+          name="description"
+          content="If you're looking to build your next web app with someone you trust, or looking for a little guidance on your journey to becoming a developer - get in touch! I don't bite."
+        />
       </Head>
       <Contact>
         <form onSubmit={handleSubmit}>
