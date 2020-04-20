@@ -8,7 +8,7 @@ export default function About() {
         <div className="hero-body">
           <Container>
             <h2 className="title is-1 has-padding-bottom-medium">
-              Who the heck am I?
+              Who the devil am I?
             </h2>
             <p className="subtitle has-text-grey">
               My name is Alexander Jack Hughes. But you can call me Alex.

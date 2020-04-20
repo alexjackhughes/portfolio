@@ -19,7 +19,7 @@ export default function Subscription() {
       onSubmit={handleSubmit}
     >
       <label htmlFor="email">
-        <h4 className="title is-4 has-text-dark is-transparent has-margin-bottom-small">
+        <h4 className="title is-4 has-text-dark has-margin-bottom-small is-transparent">
           Pop in your email 📬
         </h4>
       </label>
