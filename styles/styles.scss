@@ -18,8 +18,12 @@ $footer-background-color: $dark;
 html {
   margin: 0;
   font-family: "Muli", sans-serif !important;
-
   background-color: $dark;
+  color: $dark;
+}
+
+strong {
+  color: $grey;
 }
 
 body {
@@ -150,4 +154,17 @@ code {
 .footer-icon:hover {
   transition: opacity 300ms;
   opacity: 1;
+}
+
+.is-cover {
+  border-radius: 2rem;
+  box-shadow: rgba(0, 10, 56, 0.15) 0px 6px 15px -5px;
+}
+
+.is-cover:hover {
+  box-shadow: rgba(0, 10, 56, 0.15) 0px 10px 15px -5px;
+}
+
+p {
+  margin-bottom: 1rem;
 }

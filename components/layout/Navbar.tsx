@@ -30,7 +30,11 @@ export default function Navbar<Props>({ isDark = false }) {
                   HOME
                 </a>
               </Link>
-
+              <Link href="/blog">
+                <a className="navbar-item has-text-weight-bold has-text-dark">
+                  BLOG
+                </a>
+              </Link>
               <Link href="/contact">
                 <span className="navbar-item">
                   <button className="button is-danger is-rounded">
@@ -51,6 +55,13 @@ export default function Navbar<Props>({ isDark = false }) {
                 <Link href="/">
                   <a className="has-text-weight-bold is-size-2-mobile has-text-dark">
                     HOME
+                  </a>
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog">
+                  <a className="has-text-weight-bold is-size-2-mobile has-text-dark">
+                    BLOG
                   </a>
                 </Link>
               </li>
