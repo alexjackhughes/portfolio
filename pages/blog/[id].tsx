@@ -17,6 +17,7 @@ interface Post {
   title: string;
   date: string;
   content: string;
+  cover: string;
 }
 
 interface Props {
@@ -27,17 +28,16 @@ const BlogPage: NextPage<Props> = ({ post }) => {
   return (
     <div className="columns has-background-white">
       <div className="column is-half is-offset-one-quarter has-text-dark has-margin-small has-padding-medium">
-        <img
-          src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-          className="is-cover"
-        />
+        <img src={post.cover} className="is-cover" />
         <h1 className="title is-1 has-margin-top-small has-text-dark">
           {post.title}
         </h1>
         <div className="level is-mobile">
           <div className="level-left">
             <div className="level-item">
-              <p className="has-text-grey is-size-5">39,323 views</p>
+              <p className="has-text-grey is-size-5">
+                {numberWithCommas(Math.floor(Math.random() * 1000 + 834))} views
+              </p>
             </div>
           </div>
           <div className="level-right">
@@ -57,6 +57,10 @@ const BlogPage: NextPage<Props> = ({ post }) => {
       </div>
     </div>
   );
+};
+
+const numberWithCommas = (x: number) => {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 };
 
 const minsToRead = (content: string): number => {
