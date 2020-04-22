@@ -3,6 +3,7 @@ title: "The Secret Sauce of Coding"
 date: "2018-03-18"
 cover: "https://hackernoon.com/hn-images/1*1hlSX6egVMGcFDK_zTjn_g.jpeg"
 blurb: "Coding is a test of will. Here's what they don't tell you about a life at the keyboard."
+canonical: "https://hackernoon.com/the-secret-sauce-of-coding-34e0e2348e1d"
 ---
 
 Coding is a test of will.

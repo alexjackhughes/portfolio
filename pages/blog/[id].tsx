@@ -18,6 +18,7 @@ interface Post {
   date: string;
   content: string;
   cover: string;
+  canonical?: string;
 }
 
 interface Props {
@@ -54,6 +55,17 @@ const BlogPage: NextPage<Props> = ({ post }) => {
             className="has-margin-bottom-large is-size-5 has-text-grey"
           />
         </div>
+        {post.canonical && (
+          <div className="has-text-centered">
+            <a
+              rel="canonical"
+              className="has-margin-bottom-large is-size-5"
+              href={post.canonical}
+            >
+              Read the original article on Hackernoon
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );

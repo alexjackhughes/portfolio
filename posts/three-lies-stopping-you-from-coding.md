@@ -3,6 +3,7 @@ title: "The 3 Lies Stopping You From Coding"
 date: "2019-04-08"
 cover: "https://images.unsplash.com/photo-1570871902031-ecde063f3fa0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2090&q=80"
 blurb: "Okay people, grab your goggles because I’m here to bust some myths wide open."
+canonical: "https://hackernoon.com/the-3-lies-stopping-you-from-learning-to-code-59e76cc8f1eb"
 ---
 
 Okay people, grab your goggles because I’m here to bust some myths wide open.
