@@ -1,6 +1,8 @@
 import * as React from "react";
 import App from "next/app";
 import Head from "next/head";
+import Router from "next/router";
+import withGA from "next-ga";
 
 import { StaticKitProvider } from "@statickit/react";
 
@@ -11,7 +13,7 @@ import "../node_modules/@fortawesome/fontawesome-pro/css/all.css";
 
 const GA_TRACKING_ID = "GTM-P8NBRBL";
 
-export default class MyApp extends App {
+class MyApp extends App {
   public render() {
     const { Component, pageProps } = this.props;
 
@@ -55,3 +57,5 @@ export default class MyApp extends App {
     );
   }
 }
+
+export default withGA(GA_TRACKING_ID, Router)(MyApp);

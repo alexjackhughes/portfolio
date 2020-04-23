@@ -35,7 +35,10 @@ const Blog: NextPage<Props> = ({ posts }) => (
               <p className="has-text-grey is-size-5">{blurb}</p>
               <div className="tags are-medium">
                 {categories.map((category) => (
-                  <span className="tag is-medium is-grey has-text-grey has-text-weight-bold">
+                  <span
+                    className="tag is-medium is-grey has-text-grey has-text-weight-bold"
+                    key={category}
+                  >
                     {category.toUpperCase()}
                   </span>
                 ))}
