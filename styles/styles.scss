@@ -172,3 +172,9 @@ p {
 .is-link {
   cursor: pointer;
 }
+
+pre {
+  background-color: $grey;
+  color: $dark;
+  opacity: 0.5;
+}
