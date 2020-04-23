@@ -17,8 +17,8 @@ interface Post {
   title: string;
   date: string;
   content: string;
-  cover: string;
   canonical?: string;
+  categories: string[];
 }
 
 interface Props {
@@ -29,7 +29,7 @@ const BlogPage: NextPage<Props> = ({ post }) => {
   return (
     <div className="columns has-background-white">
       <div className="column is-half is-offset-one-quarter has-text-dark has-margin-small has-padding-medium">
-        <img src={post.cover} className="is-cover" />
+        <img src={`/images/${post.id}.jpg`} className="is-cover" />
         <h1 className="title is-1 has-margin-top-small has-text-dark">
           {post.title}
         </h1>
@@ -66,6 +66,13 @@ const BlogPage: NextPage<Props> = ({ post }) => {
             </a>
           </div>
         )}
+        <div className="tags are-medium has-margin-large">
+          {post.categories.map((category) => (
+            <span className="tag is-medium is-grey has-text-grey has-text-weight-bold">
+              {category.toUpperCase()}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
