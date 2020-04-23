@@ -1,5 +1,6 @@
 import { NextPage } from "next";
 import Link from "next/link";
+import Head from "next/head";
 
 import { getSortedPostsData, getAllPostIds } from "../lib/posts";
 
@@ -17,6 +18,13 @@ interface Props {
 
 const Blog: NextPage<Props> = ({ posts }) => (
   <>
+    <Head>
+      <title>Blog | Alex Jack Hughes</title>
+      <meta
+        name="description"
+        content="Check out my blog if you'd like to know about coding, and becoming a more experience developer - from Junior to Senior!"
+      />
+    </Head>
     <div className="columns has-background-white">
       <div className="column is-half is-offset-one-quarter has-text-dark has-margin-small has-padding-medium">
         {posts.map(({ id, title, blurb, categories }) => (
