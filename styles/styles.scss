@@ -39,16 +39,6 @@ pre {
   opacity: 0.5;
 }
 
-.level-item {
-  opacity: 0.6;
-}
-
-.level-item:hover {
-  transition: opacity 300ms;
-  opacity: 1;
-}
-
-.tags {
-  display: flex;
-  justify-content: center;
+p {
+  margin-bottom: 1rem;
 }

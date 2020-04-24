@@ -33,12 +33,12 @@ const BlogPage: NextPage<Props> = ({
           </h1>
           <div className="level is-mobile">
             <div className="level-left">
-              <div className="level-item">
+              <div className="level-item has-transparency-animation">
                 <PageViews views={views} />
               </div>
             </div>
             <div className="level-right">
-              <div className="level-item">
+              <div className="level-item has-transparency-animation">
                 <p className="has-text-grey is-size-5">
                   {minsToRead(content)} min read
                 </p>

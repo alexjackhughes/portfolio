@@ -33,7 +33,9 @@ const Blog: NextPage<Props> = ({ posts }) => (
               <h1 className="title has-text-dark is-2">{title}</h1>
               <p className="has-text-grey is-size-5">{blurb}</p>
               <Categories categories={categories} />
-              <PageViews views={views} />
+              <div className="has-transparency-animation">
+                <PageViews views={views} />
+              </div>
             </div>
           </Link>
         ))}
