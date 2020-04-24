@@ -1,9 +1,10 @@
 @import "./colours.scss";
-@import "./helpers.scss";
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:900|Muli&display=swap");
 @import "../node_modules/bulma/bulma.sass";
 @import "./spacers.scss";
+
+@import "./helpers.scss";
 
 html {
   margin: 0;

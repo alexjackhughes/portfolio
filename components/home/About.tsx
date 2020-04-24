@@ -52,6 +52,7 @@ export default function About() {
           <img
             src={require("../images/light.svg")}
             className="curve is-marginless is-paddingless flip-horizontal"
+            alt="background-image"
           />
         </div>
       </div>

@@ -24,6 +24,7 @@ export default function Hero() {
           <img
             src={require("../images/dark.svg")}
             className="curve is-marginless is-paddingless"
+            alt="background-image"
           />
         </div>
       </div>

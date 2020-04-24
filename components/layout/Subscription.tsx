@@ -14,36 +14,38 @@ export default function Subscription() {
   }
 
   return (
-    <form
-      className="box is-between-sections has-text-centered"
-      onSubmit={handleSubmit}
-    >
-      <label htmlFor="email">
-        <h4 className="title is-4 has-text-dark has-margin-bottom-small is-transparent">
-          Pop in your email 📬
-        </h4>
-      </label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-        placeholder="johnny@cash.com"
-        className="input is-medium has-no-input-styling"
-      />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <p className="has-text-grey has-margin-top-small">
-        I'm just one bloke, how much spam can I even send you?
-      </p>
-      <button
-        type="submit"
-        className="button is-primary is-rounded has-text-weight-bold is-medium has-margin-top-medium has-margin-bottom-medium"
-        disabled={state.submitting}
+    <>
+      <form
+        className="box is-between-sections has-text-centered"
+        onSubmit={handleSubmit}
       >
-        <span>Get my secret gift</span>
-        <span className="icon is-small">
-          <i className="fad fa-gift" />
-        </span>
-      </button>
-    </form>
+        <label htmlFor="email">
+          <h4 className="title is-4 has-text-grey has-margin-bottom-small">
+            Pop in your email 📬
+          </h4>
+        </label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="johnny@cash.com"
+          className="input is-medium has-no-input-styling"
+        />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <p className="has-text-grey has-margin-top-small">
+          I'm just one bloke, how much spam can I even send you?
+        </p>
+        <button
+          type="submit"
+          className="button is-primary is-rounded has-text-weight-bold is-medium has-margin-top-medium has-margin-bottom-medium"
+          disabled={state.submitting}
+        >
+          <span>Get my secret gift</span>
+          <span className="icon is-small">
+            <i className="fad fa-gift" />
+          </span>
+        </button>
+      </form>
+    </>
   );
 }

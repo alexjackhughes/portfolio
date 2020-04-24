@@ -23,6 +23,7 @@ class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
+          <html lang="en" />
           <title>React Engineer & Startup Founder | Alex Jack Hughes</title>
           <link rel="shortcut icon" href="https://alexhughes.io/favicon.ico" />
           <meta

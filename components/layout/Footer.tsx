@@ -29,6 +29,7 @@ export default function Footer() {
       <img
         src={require("../images/dark.svg")}
         className="curve is-marginless is-paddingless"
+        alt="background-image"
       />
       <footer className="footer is-primary">
         <div className="content has-text-centered">
