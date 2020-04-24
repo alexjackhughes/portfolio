@@ -4,6 +4,7 @@ date: "2019-04-08"
 blurb: "Okay people, grab your goggles because I’m here to bust some myths wide open."
 canonical: "https://hackernoon.com/the-3-lies-stopping-you-from-learning-to-code-59e76cc8f1eb"
 categories: ["coding", "junior"]
+views: 2243
 ---
 
 Okay people, grab your goggles because I’m here to bust some myths wide open.

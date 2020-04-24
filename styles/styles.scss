@@ -1,15 +1,5 @@
-$button-border-width: 4px;
-
-$white: #fafafa;
-$primary: #ff3860;
-$dark: #00061b;
-
-$grey: #9ca8ac;
-$grey-darker: $grey;
-$grey-dark: $white; //#9ca8ac;
-
-$light: $white;
-$footer-background-color: $dark;
+@import "./colours.scss";
+@import "./helpers.scss";
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:900|Muli&display=swap");
 @import "../node_modules/bulma/bulma.sass";
@@ -20,10 +10,6 @@ html {
   font-family: "Muli", sans-serif !important;
   background-color: $dark;
   color: $dark;
-}
-
-strong {
-  color: $grey;
 }
 
 body {
@@ -43,67 +29,14 @@ h6,
   font-weight: 900;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+strong {
+  color: $grey;
 }
 
-.has-right-margin-on-mobile {
-  @media only screen and (max-width: 1024px) {
-    margin-right: 2rem;
-  }
-}
-
-.react-rotating-text-cursor {
-  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
-    infinite;
-}
-
-@keyframes blinking-cursor {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-#hero-title {
-  font-size: 5rem;
-  @media only screen and (max-width: 600px) {
-    font-size: 3rem;
-  }
-}
-
-#hero-tagline {
-  font-size: 1.5rem;
-}
-
-.curve {
-  display: block;
-  margin-bottom: -0.5rem;
-}
-
-.flip-horizontal {
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-.flip-vertical {
-  -webkit-transform: scaleY(-1);
-  transform: scaleY(-1);
-}
-
-.is-transparent {
-  opacity: 0.4;
-}
-
-.navbar-burger span {
-  height: 2px;
+pre {
+  background-color: $grey;
   color: $dark;
+  opacity: 0.5;
 }
 
 .level-item {
@@ -113,70 +46,6 @@ code {
 .level-item:hover {
   transition: opacity 300ms;
   opacity: 1;
-}
-
-.box {
-  background-color: #fff;
-  border-radius: 1rem;
-  box-shadow: rgba(0, 10, 56, 0.1) 0 0 36px 0;
-  margin: 1rem;
-}
-
-.box:hover {
-  box-shadow: rgba(0, 10, 56, 0.15) 0 0 36px 0;
-}
-
-.is-between-sections {
-  margin-bottom: -10rem;
-}
-
-@media (max-width: 800px) {
-  .is-between-sections {
-    margin-bottom: 0rem;
-  }
-}
-
-.has-no-input-styling {
-  background-color: white;
-  border: 2px solid #f3f3f4;
-  box-shadow: none;
-}
-
-.active {
-  border: 2px solid #f3f3f4;
-}
-
-.footer-icon {
-  opacity: 0.4;
-  cursor: pointer;
-}
-
-.footer-icon:hover {
-  transition: opacity 300ms;
-  opacity: 1;
-}
-
-.is-cover {
-  border-radius: 2rem;
-  box-shadow: rgba(0, 10, 56, 0.15) 0px 6px 15px -5px;
-}
-
-.is-cover:hover {
-  box-shadow: rgba(0, 10, 56, 0.15) 0px 10px 15px -5px;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-.is-link {
-  cursor: pointer;
-}
-
-pre {
-  background-color: $grey;
-  color: $dark;
-  opacity: 0.5;
 }
 
 .tags {

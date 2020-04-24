@@ -3,97 +3,70 @@ import Head from "next/head";
 import ReactMarkdown from "react-markdown";
 
 import { getAllPostIds, getPostData } from "../../lib/posts";
-
-// interface Blog {
-//   title: string;
-//   categories: string[];
-//   publishedAt: string;
-//   views: number;
-//   wordCount: number;
-//   coverUrl: string;
-//   content: string;
-// }
-
-interface Post {
-  id: string;
-  title: string;
-  date: string;
-  content: string;
-  canonical?: string;
-  categories: string[];
-  blurb: string;
-}
+import { Post } from "../../lib/Post";
+import { minsToRead } from "../../utils/minsToRead";
+import Categories from "../../components/Categories";
+import PageViews from "../../components/PageViews";
 
 interface Props {
   post: Post;
 }
 
-const BlogPage: NextPage<Props> = ({ post }) => {
+const BlogPage: NextPage<Props> = ({
+  post: { title, blurb, id, views, content, categories, canonical },
+}) => {
   return (
     <>
       <Head>
-        <title>{post.title} | Alex Jack Hughes</title>
-        <meta name="description" content={`${post.blurb}`} />
+        <title>{title} | Alex Jack Hughes</title>
+        <meta name="description" content={`${blurb}`} />
       </Head>
       <div className="columns has-background-white">
         <div className="column is-half is-offset-one-quarter has-text-dark has-margin-small has-padding-medium">
-          <img src={`/images/${post.id}.jpg`} className="is-cover" />
+          <img
+            src={`/images/${id}.jpg`}
+            className="is-cover"
+            alt={`${title} cover image`}
+          />
           <h1 className="title is-1 has-margin-top-small has-text-dark">
-            {post.title}
+            {title}
           </h1>
           <div className="level is-mobile">
             <div className="level-left">
               <div className="level-item">
-                <p className="has-text-grey is-size-5">
-                  {numberWithCommas(Math.floor(Math.random() * 1000 + 834))}{" "}
-                  views
-                </p>
+                <PageViews views={views} />
               </div>
             </div>
             <div className="level-right">
               <div className="level-item">
                 <p className="has-text-grey is-size-5">
-                  {minsToRead(post.content)} min read
+                  {minsToRead(content)} min read
                 </p>
               </div>
             </div>
           </div>
           <div>
             <ReactMarkdown
-              source={post.content}
-              className="has-margin-bottom-large is-size-5 has-text-grey"
+              source={content}
+              className="has-margin-bottom-large is-size-5 has-text-grey blog-content"
             />
           </div>
-          {post.canonical && (
-            <div className="has-text-centered">
+          {canonical && (
+            <div className="has-text-centered has-margin-bottom-large">
               <a
                 rel="canonical"
                 className="has-margin-bottom-large is-size-5"
-                href={post.canonical}
+                href={canonical}
               >
                 Read the original article on Hackernoon
               </a>
             </div>
           )}
-          <div className="tags are-medium has-margin-large">
-            {post.categories.map((category) => (
-              <span className="tag is-medium is-grey has-text-grey has-text-weight-bold">
-                {category.toUpperCase()}
-              </span>
-            ))}
-          </div>
+          <Categories categories={categories} />
         </div>
       </div>
     </>
   );
-};
-
-const numberWithCommas = (x: number) => {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-};
-
-const minsToRead = (content: string): number => {
-  return Math.floor(content.split(" ").length / 40);
 };
 
 export async function getStaticProps({ params }) {

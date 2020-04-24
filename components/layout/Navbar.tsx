@@ -76,6 +76,12 @@ export default function Navbar<Props>({ isDark = false }) {
           </aside>
         )}
       </nav>
+      <style jsx>{`
+        .navbar-burger span {
+          height: 2px;
+          color: $dark;
+        }
+      `}</style>
     </>
   );
 }

@@ -86,6 +86,17 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <style jsx>{`
+          .footer-icon {
+            opacity: 0.4;
+            cursor: pointer;
+          }
+
+          .footer-icon:hover {
+            transition: opacity 300ms;
+            opacity: 1;
+          }
+        `}</style>
       </footer>
     </>
   );

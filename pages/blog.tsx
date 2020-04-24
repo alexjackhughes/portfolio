@@ -2,18 +2,13 @@ import { NextPage } from "next";
 import Link from "next/link";
 import Head from "next/head";
 
-import { getSortedPostsData, getAllPostIds } from "../lib/posts";
-
-interface Post {
-  id: string;
-  title: string;
-  date: string;
-  blurb: string;
-  categories: string[];
-}
+import { Posts } from "../lib/Post";
+import { getSortedPostsData } from "../lib/posts";
+import Categories from "../components/Categories";
+import PageViews from "../components/PageViews";
 
 interface Props {
-  posts: Post[];
+  posts: Posts;
 }
 
 const Blog: NextPage<Props> = ({ posts }) => (
@@ -27,25 +22,18 @@ const Blog: NextPage<Props> = ({ posts }) => (
     </Head>
     <div className="columns has-background-white">
       <div className="column is-half is-offset-one-quarter has-text-dark has-margin-small has-padding-medium">
-        {posts.map(({ id, title, blurb, categories }) => (
+        {posts.map(({ id, title, blurb, categories, views }) => (
           <Link href={`/blog/${id}`} key={id}>
             <div className="is-link has-text-centered has-margin-bottom-large">
-              <img src={`/images/${id}.jpg`} className="is-cover" />
+              <img
+                src={`/images/${id}.jpg`}
+                className="is-cover"
+                alt={`${title} cover image`}
+              />
               <h1 className="title has-text-dark is-2">{title}</h1>
               <p className="has-text-grey is-size-5">{blurb}</p>
-              <div className="tags are-medium">
-                {categories.map((category) => (
-                  <span
-                    className="tag is-medium is-grey has-text-grey has-text-weight-bold"
-                    key={category}
-                  >
-                    {category.toUpperCase()}
-                  </span>
-                ))}
-              </div>
-              <p className="has-text-grey is-size-5 is-transparent">
-                {numberWithCommas(Math.floor(Math.random() * 1000 + 834))} views
-              </p>
+              <Categories categories={categories} />
+              <PageViews views={views} />
             </div>
           </Link>
         ))}
@@ -53,10 +41,6 @@ const Blog: NextPage<Props> = ({ posts }) => (
     </div>
   </>
 );
-
-const numberWithCommas = (x: number) => {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-};
 
 export async function getStaticProps() {
   const posts = getSortedPostsData();
