@@ -20,6 +20,7 @@ const BlogPage: NextPage<Props> = ({
       <Head>
         <title>{title} | Alex Jack Hughes</title>
         <meta name="description" content={`${blurb}`} />
+        <link rel="canonical" href={canonical} />
       </Head>
       <div className="columns has-background-white">
         <div className="column is-half is-offset-one-quarter has-text-dark has-margin-small has-padding-medium">
