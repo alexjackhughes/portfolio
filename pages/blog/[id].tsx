@@ -15,12 +15,17 @@ interface Props {
 const BlogPage: NextPage<Props> = ({
   post: { title, blurb, id, views, content, categories, canonical },
 }) => {
+  const MetaTitle = `${title} | Alex Jack Hughes`;
+
   return (
     <>
       <Head>
-        <title>{title} | Alex Jack Hughes</title>
+        <title>{MetaTitle}</title>
         <meta name="description" content={`${blurb}`} />
         <link rel="canonical" href={canonical} />
+        <meta property="og:type" content="article" />
+        <meta property="og:description" content={`${blurb}`} />
+        <meta property="og:title" content={MetaTitle} />
       </Head>
       <div className="columns has-background-white">
         <div className="column is-half is-offset-one-quarter has-text-dark has-margin-small has-padding-medium">
