@@ -30,6 +30,7 @@ class MyApp extends App {
             name="description"
             content="Hi, I’m Alex Hughes! I'm a Full-Stack Engineer and builder of high-growth startups based in Bristol. Speciality? Typically I build serverless web apps in React, GraphQL, and TypeScript."
           />
+          <meta property="og:type" content="website" />
         </Head>
         <StaticKitProvider site="8f3036ece773">
           <Layout>
