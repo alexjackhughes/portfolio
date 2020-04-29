@@ -15,6 +15,8 @@ const GA_TRACKING_ID = "UA-89055959-16";
 class MyApp extends App {
   public render() {
     const { Component, pageProps } = this.props;
+    const description =
+      "Hi, I’m Alex Hughes! I'm a Full-Stack Engineer and builder of high-growth startups based in Bristol. Speciality? Typically I build serverless web apps in React, GraphQL, and TypeScript.";
 
     return (
       <>
@@ -26,19 +28,14 @@ class MyApp extends App {
           <html lang="en" />
           <title>React Engineer & Startup Founder | Alex Jack Hughes</title>
           <link rel="shortcut icon" href="https://alexhughes.io/favicon.ico" />
-          <meta
-            name="description"
-            content="Hi, I’m Alex Hughes! I'm a Full-Stack Engineer and builder of high-growth startups based in Bristol. Speciality? Typically I build serverless web apps in React, GraphQL, and TypeScript."
-          />
+          <meta name="description" content={description} />
           <meta
             property="og:title"
             content="React Engineer & Startup Founder | Alex Jack Hughes"
           />
-          <meta
-            property="og:description"
-            content="Hi, I’m Alex Hughes! I'm a Full-Stack Engineer and builder of high-growth startups based in Bristol. Speciality? Typically I build serverless web apps in React, GraphQL, and TypeScript."
-          />
+          <meta property="og:description" content={description} />
           <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://alexhughes.io/" />
           <meta
             property="og:image"
             content="https://alexhughes.io/template.png"
