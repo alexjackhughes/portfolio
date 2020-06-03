@@ -10,10 +10,10 @@ export default function About() {
             <h2 className="title is-1 has-padding-bottom-medium">
               Who the devil am I?
             </h2>
-            <p className="subtitle has-text-grey">
+            <p className="subtitle white">
               My name is Alexander Jack Hughes. But you can call me Alex.
             </p>
-            <p className="subtitle has-text-grey">
+            <p className="subtitle white">
               To give you a quick history lesson; I've been building startups
               for the better part of a decade, and in between managed to get an
               MSc in Computer Science and write{" "}
@@ -28,11 +28,11 @@ export default function About() {
               . I'm pretty comfortable with JavaScript, having built from
               scratch a number of production-grade web apps.
             </p>
-            <p className="subtitle has-text-grey">
+            <p className="subtitle white">
               Tech stack? Mainly I work with React & GraphQL, using a good solid
               framework like Gatsby or Next.js.
             </p>
-            <p className="subtitle has-text-grey">
+            <p className="subtitle white">
               But enough about me, how have you been?
             </p>
             <div className="has-margin-top-large">

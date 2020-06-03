@@ -16,7 +16,7 @@ export default function Footer() {
                 Well future friend, I'm playing around with running a monthly
                 newsletter.
               </p>
-              <p className="subtitle has-text-grey">
+              <p className="subtitle has-text-grey has-padding-bottom-medium">
                 Another startup newsletter, really? Yep really. And to show you
                 how super serious I am, I'll even send you a free secret gift
                 when you sign up.
