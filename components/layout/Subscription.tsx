@@ -21,7 +21,7 @@ export default function Subscription() {
       >
         <label htmlFor="email">
           <h4 className="title is-4 has-text-grey has-margin-bottom-small">
-            Subscribe for the free guide 📬
+            It's free! 📬
           </h4>
         </label>
         <input
@@ -40,7 +40,7 @@ export default function Subscription() {
           className="button is-primary is-rounded has-text-weight-bold is-medium has-margin-top-medium has-margin-bottom-medium"
           disabled={state.submitting}
         >
-          <span>Get my secret gift</span>
+          <span>Get my free book</span>
           <span className="icon is-small">
             <i className="fad fa-gift" />
           </span>

@@ -17,8 +17,8 @@ export default function Footer() {
               <p className="subtitle has-text-grey">
                 A little less than a decade ago I quit my job, spent my last
                 £100 on tinned food, and began freelancing full-time with zero
-                clients. Jump forward a few years and I had worked my way into
-                the top 1% of freelancers on{" "}
+                clients. Jump forward a few years and I'd worked my way into the
+                top 1% of freelancers on{" "}
                 <a href="https://www.peopleperhour.com/freelancer/writing/alex-hughes-creative-director-mwmzaa">
                   peopleperhour.com
                 </a>
@@ -27,7 +27,7 @@ export default function Footer() {
               <p className="subtitle has-text-grey">
                 How? Well right now I'm in the middle of writing a book about
                 exactly that; documenting everything from how I got my first
-                client to how to build a website with no experience.
+                client, to how to build a website with no experience.
               </p>
               <p className="subtitle has-text-grey has-padding-bottom-medium">
                 It still needs a bit of polish, which is why I've decided to
