@@ -49,10 +49,11 @@ export default function Hero() {
 
 const myFeatures: string[] = [
   "startup founder",
-  "Node back-end engineer",
+  "Node engineer",
+  "Hackernoon writer",
   "TypeScript superfan",
-  "React front-end developer",
+  "React developer",
   "coding mentor",
-  "dabbler in AWS settings",
-  "builder of docker images",
+  "AWS guru",
+  "Docker pro",
 ];

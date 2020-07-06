@@ -82,7 +82,7 @@ const icons = [
   {
     icon: "fad fa-calendar-star",
     heading: "years freelancing",
-    title: "5+",
+    title: "8+",
     color: "has-text-danger",
   },
 ];

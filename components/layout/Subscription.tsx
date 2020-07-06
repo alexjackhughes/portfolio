@@ -21,7 +21,7 @@ export default function Subscription() {
       >
         <label htmlFor="email">
           <h4 className="title is-4 has-text-grey has-margin-bottom-small">
-            Pop in your email 📬
+            Subscribe for the free guide 📬
           </h4>
         </label>
         <input
@@ -33,7 +33,7 @@ export default function Subscription() {
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <p className="has-text-grey has-margin-top-small">
-          Don't worry buddy, how much spam can I even send you?
+          Every week I'll send you a new chapter hot off the press
         </p>
         <button
           type="submit"
