@@ -6,11 +6,8 @@ const Categories: React.FC<Props> = ({ categories }) => (
   <>
     <div className="tags are-medium">
       {categories.map((category) => (
-        <span
-          key={category}
-          className="tag is-medium is-grey has-text-grey has-text-weight-bold"
-        >
-          {category.toUpperCase()}
+        <span key={category} className="tag is-medium is-link is-light">
+          {category.toLowerCase()}
         </span>
       ))}
     </div>

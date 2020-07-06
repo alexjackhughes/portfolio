@@ -20,10 +20,10 @@ export default function Hero() {
             </div>
           </Container>
         </div>
-        <div className="hero-bottom">
+        <div className="hero-bottom has-background-white-ter">
           <img
-            src={require("../images/dark.svg")}
-            className="curve is-marginless is-paddingless"
+            src={require("../images/light.svg")}
+            className="curve is-marginless is-paddingless flip-vertical"
             alt="background-image"
           />
         </div>

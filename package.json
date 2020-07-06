@@ -14,7 +14,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^5.13.0",
     "@statickit/react": "^2.1.1",
-    "bulma": "^0.7.5",
+    "bulma": "^0.9.0",
     "gray-matter": "^4.0.2",
     "next": "^9.3.5",
     "next-ga": "^2.3.4",

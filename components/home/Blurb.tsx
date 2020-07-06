@@ -12,11 +12,11 @@ interface Props {
 }
 
 const Blurb: React.FC<Props> = ({ blurb: { icon, color, heading, title } }) => (
-  <div className="level-item has-text-centered">
+  <div className="level-item has-text-centered has-transparency-animation">
     <div>
       <span className={`icon fad ${icon} fa-3x is-large ${color}`} />
-      <p className="heading">{heading}</p>
-      <h2 className="title">{title}</h2>
+      <h2 className="title has-text-grey has-margin-top-medium">{title}</h2>
+      <p className="heading has-text-grey">{heading}</p>
     </div>
   </div>
 );

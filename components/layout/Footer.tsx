@@ -13,13 +13,13 @@ export default function Footer() {
             <div className="has-padding-small has-text-centered is-white">
               <h2 className="title is-1 has-text-dark">What's next?</h2>
               <p className="subtitle has-text-grey">
-                Well future friend, I'm playing around with running a monthly
+                Well future friend, I'm playing around with running a weekly
                 newsletter.
               </p>
               <p className="subtitle has-text-grey has-padding-bottom-medium">
-                Another startup newsletter, really? Yep really. And to show you
-                how super serious I am, I'll even send you a free secret gift
-                when you sign up.
+                Another startup newsletter, really? And to show you how super
+                serious I am, I'll even send you a secret free gift when you
+                sign up.
               </p>
               <Subscription />
             </div>
