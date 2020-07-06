@@ -20,13 +20,6 @@ export default function Contact({ children }) {
             {children}
           </Container>
         </div>
-        <div className="hero-bottom">
-          <img
-            src={require("../images/light.svg")}
-            className="curve is-marginless is-paddingless flip-horizontal"
-            alt="background-image"
-          />
-        </div>
       </div>
     </>
   );

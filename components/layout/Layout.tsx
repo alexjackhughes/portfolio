@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <>
       <Navbar />
       <>{children}</>
-      <div style={{ backgroundColor: "#fafafa" }}>
+      <div style={{ backgroundColor: "#fff" }}>
         <Footer />
       </div>
     </>

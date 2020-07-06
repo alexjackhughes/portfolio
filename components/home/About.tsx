@@ -4,7 +4,7 @@ import Blurb from "./Blurb";
 export default function About() {
   return (
     <>
-      <div className="hero has-background-white-ter is-fullheight">
+      <div className="hero has-background-grey-lighter is-fullheight">
         <div className="hero-body">
           <Container>
             <h2 className="title is-1 has-padding-bottom-medium has-text-dark	">
@@ -56,7 +56,7 @@ export default function About() {
         </div>
         <div className="hero-bottom">
           <img
-            src={require("../images/light.svg")}
+            src={require("../images/white.svg")}
             className="curve is-marginless is-paddingless flip-horizontal"
             alt="background-image"
           />

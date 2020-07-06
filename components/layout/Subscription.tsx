@@ -33,7 +33,7 @@ export default function Subscription() {
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <p className="has-text-grey has-margin-top-small">
-          I'm just one bloke, how much spam can I even send you?
+          Don't worry buddy, how much spam can I even send you?
         </p>
         <button
           type="submit"
