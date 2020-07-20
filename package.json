@@ -14,6 +14,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^5.13.0",
     "@statickit/react": "^2.1.1",
+    "@stripe/stripe-js": "^1.8.0",
     "bulma": "^0.9.0",
     "gray-matter": "^4.0.2",
     "next": "^9.3.5",
