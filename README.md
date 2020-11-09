@@ -37,4 +37,4 @@ now --prod # to overwrite later
 
 For the curious, this is a TypeScript project built with Next and deployed on Now. It's also likely going to have an API by the time someone reads this, making it a full-stack application. Probably with Prisma and MongoDB on the backend.
 
-I'm using StaticKit for the forms and email subscriptions, and Bulma for the styling (with a bit of elbow greese fromy myself).
+I'm using StaticKit for the forms and email subscriptions, and Bulma for the styling (with a bit of elbow greese from myself).
